@@ -163,8 +163,8 @@ public class Adapter extends SelectableAdapter<Adapter.ViewHolder> {
 		}
 
 		public interface ClickListener {
-			public void onItemClicked(int position);
-			public boolean onItemLongClicked(int position);
+			 void onItemClicked(int position);
+			 boolean onItemLongClicked(int position);
 		}
 	}
 }

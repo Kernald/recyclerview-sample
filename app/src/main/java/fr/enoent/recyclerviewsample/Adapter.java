@@ -149,14 +149,14 @@ public class Adapter extends SelectableAdapter<Adapter.ViewHolder> {
 		@Override
 		public void onClick(View v) {
 			if (listener != null) {
-				listener.onItemClicked(getPosition());
+				listener.onItemClicked(getLayoutPosition());
 			}
 		}
 
 		@Override
 		public boolean onLongClick(View v) {
 			if (listener != null) {
-				return listener.onItemLongClicked(getPosition());
+				return listener.onItemLongClicked(getLayoutPosition());
 			}
 
 			return false;
